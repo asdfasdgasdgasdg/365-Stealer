@@ -205,8 +205,7 @@ def createmacros(docxfile,itemId,name):
 
 def onedrive():
     response = requests.get(" https://graph.microsoft.com/v1.0/me/drive/root/children", headers={"Authorization":token}).json()
-    if response['error']:
-        return
+    
     os.mkdir(folder + '/onedrive')
     value = 0
     print(crayons.yellow('[!] Retrieving OneDrive files'))
